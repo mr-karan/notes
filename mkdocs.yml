@@ -1,0 +1,5 @@
+site_name: Karan's Programming Notes
+theme:
+  name: material
+  palette:
+    primary: brown
