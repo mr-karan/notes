@@ -8,7 +8,7 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   palette:
-    primary: brown
+    primary: deep purple
   language: en
   include_search_page: true
   search_index_only: true
