@@ -30,7 +30,10 @@ extra:
 nav:
 - Home: index.md
 - Snippets:
-  - snippets/misc/utc-local-time.md
+  - Misc:
+    - snippets/misc/utc-local-time.md
+  - K8s:
+    - snippets/k8s/resource-utilisation.md
 
 markdown_extensions:
   - admonition
