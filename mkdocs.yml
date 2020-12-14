@@ -15,6 +15,9 @@ theme:
 
 plugins:
   - search:
+      prebuild_index: python
+      lang:
+      - en
   - minify:
       minify_html: true
 
