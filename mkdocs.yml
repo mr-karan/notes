@@ -3,7 +3,7 @@ site_description: Short nuggets of information, code snippets or articles that I
 copyright: Made with ❤️ by Karan.
 repo_name: mr-karan/notes
 repo_url: https://github.com/mr-karan/notes
-edit_uri: edit/master/docs/
+edit_uri: edit/main/docs/
 
 theme:
   name: material
