@@ -32,6 +32,7 @@ nav:
 - Snippets:
   - Misc:
     - snippets/misc/utc-local-time.md
+    - snippets/misc/screenshot-effects.md
   - K8s:
     - snippets/k8s/resource-utilisation.md
 
