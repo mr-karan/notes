@@ -35,6 +35,7 @@ nav:
     - snippets/misc/screenshot-effects.md
   - K8s:
     - snippets/k8s/resource-utilisation.md
+    - snippets/k8s/kubectl-cheatsheet.md
 
 markdown_extensions:
   - admonition
