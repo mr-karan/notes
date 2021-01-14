@@ -36,6 +36,8 @@ nav:
   - K8s:
     - snippets/k8s/resource-utilisation.md
     - snippets/k8s/kubectl-cheatsheet.md
+  - Docker:
+    - snippets/docker/use-custom-dns.md
 
 markdown_extensions:
   - admonition
