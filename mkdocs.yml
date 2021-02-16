@@ -38,6 +38,7 @@ nav:
           - snippets/k8s/kubectl-cheatsheet.md
       - Docker:
           - snippets/docker/use-custom-dns.md
+          - snippets/docker/commands.md
       - Postgres:
           - snippets/postgres/wal-log-reset.md
 markdown_extensions:
