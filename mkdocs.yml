@@ -17,7 +17,7 @@ plugins:
   - search:
       prebuild_index: python
       lang:
-      - en
+        - en
   - minify:
       minify_html: true
 
@@ -28,17 +28,18 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/mrkaran_
 nav:
-- Home: index.md
-- Snippets:
-  - Misc:
-    - snippets/misc/utc-local-time.md
-    - snippets/misc/screenshot-effects.md
-  - K8s:
-    - snippets/k8s/resource-utilisation.md
-    - snippets/k8s/kubectl-cheatsheet.md
-  - Docker:
-    - snippets/docker/use-custom-dns.md
-
+  - Home: index.md
+  - Snippets:
+      - Misc:
+          - snippets/misc/utc-local-time.md
+          - snippets/misc/screenshot-effects.md
+      - K8s:
+          - snippets/k8s/resource-utilisation.md
+          - snippets/k8s/kubectl-cheatsheet.md
+      - Docker:
+          - snippets/docker/use-custom-dns.md
+      - Postgres:
+          - snippets/postgres/wal-log-reset.md
 markdown_extensions:
   - admonition
   - codehilite
