@@ -49,3 +49,5 @@ If you're installing for the first time, you can uncomment this blob from the ab
 # echo "Setting PATH to include golang binaries"
 # echo "export PATH='$PATH':/usr/local/go/bin:$GOPATH/bin" >> ~/.profile && source ~/.profile
 ```
+
+Mofified it from a gist I found [here](https://gist.github.com/Zate/b3c8e18cbb2bbac2976d79525d95f893).
