@@ -3,6 +3,7 @@
 The below shell script is helpful to grab a specific Go version and update it locally.
 
 To use it you can tweak the following variables:
+
 - `VERSION`
 - `PLATFORM`
 
