@@ -41,6 +41,8 @@ nav:
           - snippets/docker/commands.md
       - Postgres:
           - snippets/postgres/wal-log-reset.md
+      - Go:
+          - snippets/go/update-go.md
 markdown_extensions:
   - admonition
   - codehilite
