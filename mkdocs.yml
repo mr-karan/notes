@@ -43,6 +43,8 @@ nav:
           - snippets/postgres/wal-log-reset.md
       - Go:
           - snippets/go/update-go.md
+      - Linux:
+          - snippets/linux/get-local-ip.md
 markdown_extensions:
   - admonition
   - codehilite
