@@ -45,6 +45,7 @@ nav:
           - snippets/go/update-go.md
       - Linux:
           - snippets/linux/get-local-ip.md
+          - snippets/linux/pritunl-systemd-resolved-issues.md
 markdown_extensions:
   - admonition
   - codehilite
