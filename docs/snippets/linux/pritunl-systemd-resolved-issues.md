@@ -24,7 +24,7 @@ You can see it fails at the step `Call failed: Unit dbus-org.freedesktop.resolve
 
 ### Solution
 
-- The solution is to disable `systemd-resolved` at the `NetworkManager` level:
+- The solution is to disable `systemd-resolved` at the `NetworkManager` level. You need to add the following config block which overrides these settings at `/etc/NetworkManager/NetworkManager.conf`:
 
 ```ini
 [main]
