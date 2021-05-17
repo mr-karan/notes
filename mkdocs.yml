@@ -47,6 +47,7 @@ nav:
           - snippets/linux/get-local-ip.md
           - snippets/linux/pritunl-systemd-resolved-issues.md
           - snippets/linux/most-used-commands.md
+          - snippets/linux/curl.md
 markdown_extensions:
   - admonition
   - codehilite
