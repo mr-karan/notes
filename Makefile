@@ -15,4 +15,4 @@ fresh: clean serve
 
 .PHONY: run-local-docker
 run-local-docker:
-	docker run --rm -it -p 8888:8000 -v ${PWD}:/docs squidfunk/mkdocs-material:7.1.5
+	docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material:7.1.5

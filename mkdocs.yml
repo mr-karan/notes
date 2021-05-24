@@ -52,25 +52,21 @@ extra:
       link: https://twitter.com/mrkaran_
 nav:
   - Home: index.md
-  - Snippets:
-      - Misc:
-          - snippets/misc/utc-local-time.md
-          - snippets/misc/screenshot-effects.md
-      - K8s:
-          - snippets/k8s/resource-utilisation.md
-          - snippets/k8s/kubectl-cheatsheet.md
-      - Docker:
-          - snippets/docker/use-custom-dns.md
-          - snippets/docker/commands.md
-      - Postgres:
-          - snippets/postgres/wal-log-reset.md
-      - Go:
-          - snippets/go/update-go.md
-      - Linux:
-          - snippets/linux/get-local-ip.md
-          - snippets/linux/pritunl-systemd-resolved-issues.md
-          - snippets/linux/most-used-commands.md
-          - snippets/linux/curl.md
+  - CLI:
+      - cli/get-local-ip.md
+      - cli/pritunl-systemd-resolved-issues.md
+      - cli/most-used-commands.md
+      - cli/curl.md
+  - K8s:
+      - k8s/resource-utilisation.md
+      - k8s/kubectl-cheatsheet.md
+  - Docker:
+      - docker/use-custom-dns.md
+      - docker/commands.md
+  - Postgres:
+      - postgres/wal-log-reset.md
+  - Go:
+      - go/update-go.md
 markdown_extensions:
   - admonition
   - codehilite
