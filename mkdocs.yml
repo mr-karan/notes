@@ -13,13 +13,13 @@ theme:
       scheme: default
       primary: green
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-sunny
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: deep orange
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-night
         name: Switch to light mode
   shortcuts:
     next: 78     # n
@@ -30,7 +30,6 @@ theme:
   search_index_only: true
   features:
     - navigation.instant
-    - tabs
   font:
     text: Inter
     code: IMB Plex Mono
