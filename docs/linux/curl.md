@@ -22,3 +22,9 @@ However it's easy to override the HTTP method using `-X`. For eg, to send a `GET
 ```
 curl -I -X GET -vvvv https://mrkaran.dev
 ```
+
+## Send a JSON payload from file
+
+```sh
+curl -i -XPOST -H "Content-Type: application/json" -d @mock_payload.json http://localhost:6000/endpoint
+```
