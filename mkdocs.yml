@@ -67,6 +67,7 @@ nav:
       - postgres/wal-log-reset.md
   - Go:
       - go/update-go.md
+      - go/decode-json-type-convert.md
 markdown_extensions:
   - admonition
   - codehilite
