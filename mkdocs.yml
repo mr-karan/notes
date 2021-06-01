@@ -51,23 +51,25 @@ extra:
       link: https://twitter.com/mrkaran_
 nav:
   - Home: index.md
+  - AWS:
+    - aws/cli.md
+  - Docker:
+      - docker/use-custom-dns.md
+      - docker/commands.md
+  - Go:
+      - go/update-go.md
+      - go/decode-json-type-convert.md
+  - K8s:
+      - k8s/resource-utilisation.md
+      - k8s/kubectl-cheatsheet.md
   - Linux:
       - linux/get-local-ip.md
       - linux/pritunl-systemd-resolved-issues.md
       - linux/most-used-commands.md
       - linux/curl.md
       - linux/get-file-name.md
-  - K8s:
-      - k8s/resource-utilisation.md
-      - k8s/kubectl-cheatsheet.md
-  - Docker:
-      - docker/use-custom-dns.md
-      - docker/commands.md
   - Postgres:
       - postgres/wal-log-reset.md
-  - Go:
-      - go/update-go.md
-      - go/decode-json-type-convert.md
 markdown_extensions:
   - admonition
   - codehilite
