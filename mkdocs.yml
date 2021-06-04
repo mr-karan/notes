@@ -53,6 +53,9 @@ nav:
   - Home: index.md
   - AWS:
     - aws/cli.md
+  - Clickhouse:
+      - clickhouse/snippets.md
+      - clickhouse/securing-server.md
   - Docker:
       - docker/use-custom-dns.md
       - docker/commands.md
@@ -78,3 +81,6 @@ markdown_extensions:
       permalink: true
   - pymdownx.tabbed
   - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.details
+  - footnotes
