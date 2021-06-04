@@ -53,7 +53,7 @@ GRANT ALL ON *.* TO admin WITH GRANT OPTION;
 
 This creates an `admin` user with and stores the SHA-256 hash of the password in `/var/lib/clickhouse/access`. It also additonally only allows connection from a local interface using `HOST LOCAL` directive.
 
-### Remove default user
+### 3. Remove default user
 
 You can safely remove the `default` user as it's not really required.
 
