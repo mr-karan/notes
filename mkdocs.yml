@@ -51,6 +51,10 @@ extra:
       link: https://twitter.com/mrkaran_
 nav:
   - Home: index.md
+  - Ansible:
+    - ansible/usecases.md
+    - ansible/faq.md
+    - ansible/vault.md
   - AWS:
     - aws/cli.md
   - Clickhouse:

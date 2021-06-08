@@ -38,3 +38,11 @@ curl -I -X GET -vvvv https://mrkaran.dev
 ```sh
 curl -i -XPOST -H "Content-Type: application/json" -d @mock_payload.json http://localhost:6000/endpoint
 ```
+
+## git
+
+### Set the editor
+
+```sh
+git config --global core.editor "vim"
+```
