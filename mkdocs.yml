@@ -66,10 +66,10 @@ nav:
       - k8s/resource-utilisation.md
       - k8s/kubectl-cheatsheet.md
   - Linux:
+      - linux/snippets.md
       - linux/get-local-ip.md
       - linux/pritunl-systemd-resolved-issues.md
       - linux/most-used-commands.md
-      - linux/curl.md
       - linux/get-file-name.md
   - Postgres:
       - postgres/wal-log-reset.md

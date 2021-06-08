@@ -1,6 +1,16 @@
-# Useful curl snippets
+# Common CLI commands
 
-## Show only headers
+## rsync
+
+### Copying files locally
+
+```
+rsync -avhW --no-compress --progress /src/ /dst/
+```
+
+## curl
+
+### Show only headers
 
 curl has an option to display only headers using `-I`. This flag is better than using a combination of `-s` and redirecting the output to `/dev/null` or `2>&1` as it's easier to remember.
 
@@ -23,7 +33,7 @@ However it's easy to override the HTTP method using `-X`. For eg, to send a `GET
 curl -I -X GET -vvvv https://mrkaran.dev
 ```
 
-## Send a JSON payload from file
+### Send a JSON payload from file
 
 ```sh
 curl -i -XPOST -H "Content-Type: application/json" -d @mock_payload.json http://localhost:6000/endpoint
