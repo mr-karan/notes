@@ -13,7 +13,7 @@ If a task is defined with above tags, then only if `my_custom_tag` is there, the
 
 To make this simple, the playbook run command should have a list of tags that are to be executed. `--tags='abc,def'` is the way to supply these tags on the command-line.
 
-```tip
+!!! tip
     Use Makefiles whenever possible.
 
 If you add a tag to a playbook, then the tag is **appended** to the role.
@@ -75,6 +75,6 @@ ansible-playbook example.yml --tags "configuration,packages" --list-tasks
 
 ## Roles
 
-```tip:
+!!! tip
     Always ensure you fetch the remote roles _again_ if you made any changes to them.
-```
+
