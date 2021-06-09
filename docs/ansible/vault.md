@@ -25,3 +25,15 @@ another_password: supersecret
 4. Run the playbook with `ansible-playbook -i inventory playbook.yml -e @secrets.enc --vault-password-file=.vault_password`
 
 That's all! `{{password}}` and `{{another_password}}` will be available inside tasks normally, no extra work needed.
+
+### Managing Secrets
+
+You can use these commands to view/edit secret file.
+
+```Makefile
+view-secrets:
+	ansible-vault view secrets.enc --vault-password-file=.vault_password
+
+edit-secrets:
+	EDITOR=vim ansible-vault edit secrets.enc --vault-password-file=.vault_password
+```
