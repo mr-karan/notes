@@ -15,3 +15,15 @@
     - another_var
   no_log: true
 ```
+
+## Execute a task before executing a role
+
+```yml
+- hosts: "my_server"
+  become: yes
+  # Assert if variables are present.
+  pre_tasks:
+    - import_tasks: ../tasks/assert.yml
+  roles:
+    - role: nginx
+```
