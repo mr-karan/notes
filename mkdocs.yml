@@ -70,11 +70,14 @@ nav:
       - k8s/resource-utilisation.md
       - k8s/kubectl-cheatsheet.md
   - Linux:
-      - linux/snippets.md
-      - linux/get-local-ip.md
-      - linux/pritunl-systemd-resolved-issues.md
-      - linux/most-used-commands.md
       - linux/get-file-name.md
+      - linux/generate-random-string.md
+      - linux/get-local-ip.md
+      - linux/most-used-commands.md
+      - linux/pritunl-systemd-resolved-issues.md
+      - linux/screenshot-effects.md
+      - linux/snippets.md
+      - linux/utc-local-time.md
   - Postgres:
       - postgres/wal-log-reset.md
 markdown_extensions:
