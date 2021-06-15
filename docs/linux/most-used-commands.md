@@ -1,4 +1,4 @@
-# Find Top 10 shell commands from history
+# Most used shell commands
 
 Using `history` and a bunch of other Linux-fu commands, we can find out the top `10` most used commands in the shell history: 
 
