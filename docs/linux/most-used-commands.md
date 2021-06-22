@@ -6,7 +6,7 @@ Using `history` and a bunch of other Linux-fu commands, we can find out the top 
 history | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10
 ```
 
-Here's mine (_last updated at Jun 2021_)
+Here's mine (_last updated on Jun 2021_)
 
 ```sh
      1  761  9.72027%    clear

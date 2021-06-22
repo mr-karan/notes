@@ -58,3 +58,15 @@ git config --global core.editor "vim"
 `\b` in regex is used to match word boundaries (i.e. the location between the first word character and non-word character).
 
 `sed -i 's/\bsuper_specific_phrase\b/STRING_TO_REPLACE_IT/g' filename`
+
+## tcpdump
+
+### Check for packets flowing out from an interface for a specific CIDR
+
+```bash
+sudo tcpdump -v -i wlo1 dst net 192.168.0.0/16
+```
+
+- `-i` is for `interface`. `wlo1` is the interface name.
+- `dst` specifies `destination IP`
+- `net` specifies it's a CIDR range.
