@@ -70,3 +70,17 @@ sudo tcpdump -v -i wlo1 dst net 192.168.0.0/16
 - `-i` is for `interface`. `wlo1` is the interface name.
 - `dst` specifies `destination IP`
 - `net` specifies it's a CIDR range.
+
+## ip
+
+## List routing table
+
+```sh
+ip route
+```
+
+## Find which interface and route a particular IP is taking
+
+```sh
+ip route get 192.168.1.1
+```
