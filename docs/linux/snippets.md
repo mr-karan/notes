@@ -47,6 +47,12 @@ curl -i -XPOST -H "Content-Type: application/json" -d @mock_payload.json http://
 git config --global core.editor "vim"
 ```
 
+### Delete all local branches
+
+```sh
+git branch --merged | grep -v \* | xargs git branch -D
+```
+
 ## sed
 
 ### Edit in place
