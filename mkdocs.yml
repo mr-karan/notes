@@ -80,6 +80,9 @@ nav:
       - linux/utc-local-time.md
   - Postgres:
       - postgres/wal-log-reset.md
+  - Vector:
+      - vector/debugging-tips.md
+
 markdown_extensions:
   - admonition
   - codehilite
