@@ -78,3 +78,22 @@ ansible-playbook example.yml --tags "configuration,packages" --list-tasks
 !!! tip
     Always ensure you fetch the remote roles _again_ if you made any changes to them.
 
+## Inventory
+
+### Aliases
+
+Aliases are helpful in cases where the `ansible_host` is same (bastion host), but the target host is defined with `ansible_ssh_extra_args`. In such cases, Ansible is unable to differentiate between two hostnames and it thinks both the hosts are same.
+
+```ini
+bastion-host ansible_ssh_port=22 ansible_ssh_user=ubuntu ansible_ssh_extra_args="-o 'Hostname 1.1.1.1'"
+bastion-host ansible_ssh_port=22 ansible_ssh_user=ubuntu ansible_ssh_extra_args="-o 'Hostname 2.2.2.2'"
+```
+
+The fix to this is to use an [`Inventory Alias`](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html#inventory-aliases).
+
+```ini
+app_1 ansible_host=bastion-host ansible_ssh_port=22 ansible_ssh_user=ubuntu ansible_ssh_extra_args="-o 'Hostname 1.1.1.1'"
+app_2 ansible_host=bastion-host ansible_ssh_port=22 ansible_ssh_user=ubuntu ansible_ssh_extra_args="-o 'Hostname 2.2.2.2'"
+```
+
+So with the alias `app_1` and `app_2`, Ansible is able to differentiate b/w two hostnames.

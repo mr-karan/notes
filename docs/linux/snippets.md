@@ -96,3 +96,11 @@ ip route
 ```sh
 ip route get 192.168.1.1
 ```
+
+## Disk Size related commands
+
+### Check disk size of a directory
+
+```sh
+du -sh /var/log/*
+```
