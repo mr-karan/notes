@@ -21,7 +21,7 @@ def datetime_from_utc_to_local(utc_datetime):
 
 parser = argparse.ArgumentParser(description="Convert UTC time to Local time.")
 parser.add_argument(
-    "--timestamp", required=True, help="timestamp of UTC string %H:%M format"
+    "--timestamp", required=True, help="timestamp of UTC string"
 )
 
 args = parser.parse_args()
@@ -39,8 +39,10 @@ print(res.strftime("%H:%M:%S"))
 ### Usage
 
 `python utc-ist.py --timestamp 03:00`
+`python utc-ist.py --timestamp 03:00:10`
+`python utc-ist.py --timestamp 03:00:15.100`
 
-It takes a `--timestamp` parameter which should be a string depicting the UTC time format in `%H:%M` format.
+It takes a `--timestamp` parameter which should be a string depicting the UTC time format.
 
 ### Alias
 
