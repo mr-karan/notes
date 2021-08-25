@@ -78,6 +78,7 @@ nav:
       - linux/screenshot-effects.md
       - linux/snippets.md
       - linux/utc-local-time.md
+      - linux/brightness-control.md
   - Postgres:
       - postgres/wal-log-reset.md
   - Vector:

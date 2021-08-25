@@ -5,24 +5,35 @@ Often I've felt the need to convert UTC time to IST but a quick google search re
 Here's the script I wrote, you can customise according to your needs if you wish to:
 
 ```python
-from datetime import datetime
 import argparse
 import time
+from datetime import datetime
+from sys import exit
+
+from dateutil.parser import parse
+
 
 def datetime_from_utc_to_local(utc_datetime):
     now = time.time()
     offset = datetime.fromtimestamp(now) - datetime.utcfromtimestamp(now)
     return utc_datetime + offset
 
-parser = argparse.ArgumentParser(description='Convert UTC time to Local time.')
-parser.add_argument('--timestamp', required=True,
-                   help='timestamp of UTC string %H:%M format')
+
+parser = argparse.ArgumentParser(description="Convert UTC time to Local time.")
+parser.add_argument(
+    "--timestamp", required=True, help="timestamp of UTC string %H:%M format"
+)
 
 args = parser.parse_args()
 
-utc = datetime.strptime(args.timestamp, '%H:%M')
+try:
+    utc = parse(args.timestamp)
+except Exception as e:
+    print(e)
+    exit(1)
+
 res = datetime_from_utc_to_local(utc)
-print (res.strftime("%H:%M"))
+print(res.strftime("%H:%M:%S"))
 ```
 
 ### Usage
