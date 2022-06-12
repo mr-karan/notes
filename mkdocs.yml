@@ -4,6 +4,8 @@ copyright: Made with ❤️ by Karan.
 repo_name: mr-karan/notes
 repo_url: https://github.com/mr-karan/notes
 edit_uri: edit/main/docs/
+docs_dir: ./docs
+site_dir: ./site
 
 theme:
   name: material
@@ -30,6 +32,9 @@ theme:
   search_index_only: true
   features:
     - navigation.instant
+    - search.share
+    - search.highlight
+    - search.suggest
   font:
     text: Inter
     code: IMB Plex Mono
@@ -42,6 +47,7 @@ plugins:
         - en
   - minify:
       minify_html: true
+  - roamlinks
 
 extra:
   social:
@@ -49,49 +55,20 @@ extra:
       link: https://github.com/mr-karan
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/mrkaran_
-nav:
-  - Home: index.md
-  - Ansible:
-    - ansible/usecases.md
-    - ansible/faq.md
-    - ansible/vault.md
-  - AWS:
-    - aws/cli.md
-  - Clickhouse:
-      - clickhouse/snippets.md
-      - clickhouse/securing-server.md
-  - Docker:
-      - docker/use-custom-dns.md
-      - docker/commands.md
-  - Go:
-      - go/update-go.md
-      - go/decode-json-type-convert.md
-  - K8s:
-      - k8s/resource-utilisation.md
-      - k8s/kubectl-cheatsheet.md
-  - Linux:
-      - linux/get-file-name.md
-      - linux/generate-random-string.md
-      - linux/get-local-ip.md
-      - linux/most-used-commands.md
-      - linux/pritunl-systemd-resolved-issues.md
-      - linux/screenshot-effects.md
-      - linux/snippets.md
-      - linux/utc-local-time.md
-      - linux/brightness-control.md
-  - Postgres:
-      - postgres/wal-log-reset.md
-  - Vector:
-      - vector/debugging-tips.md
+
 
 markdown_extensions:
   - admonition
   - codehilite
   - meta
+  - attr_list
+  - footnotes
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.highlight
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
   - toc:
       permalink: true
-  - pymdownx.tabbed
-  - pymdownx.superfences
-  - pymdownx.tasklist
-  - pymdownx.details
-  - footnotes

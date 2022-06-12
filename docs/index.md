@@ -1,3 +1,4 @@
-# Karan's Programming Notes
+## Karan's Programming Notes
 
-These are some of my short snippets/notes that I collect mainly for myself and share in case someone finds them useful.
+Collection of short snippets, notes and TILs about things related to Programming Languages, Linux, DevOps tools, etc.
+

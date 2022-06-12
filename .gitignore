@@ -131,3 +131,6 @@ dmypy.json
 # Custom
 *.env
 site/
+docs/.trash
+docs/.obsidian
+.vscode/

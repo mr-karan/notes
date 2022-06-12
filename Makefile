@@ -1,6 +1,6 @@
 .PHONY: build
 build:
-	mkdocs build
+	mkdocs build --verbose
 
 .PHONY: serve
 serve:
