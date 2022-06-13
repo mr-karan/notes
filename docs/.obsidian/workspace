@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Misc/Most used shell commands.md",
+            "file": "Nomad/CLI.md",
             "mode": "preview",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Misc/Most used shell commands.md",
+                "file": "Nomad/CLI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "0bc92bfb63873397",
   "lastOpenFiles": [
+    "Nomad/CLI.md",
+    "Nomad/Editor setup.md",
+    "Nomad/Single Node Setup.md",
+    "Docker/Custom subnet.md",
     "Misc/Most used shell commands.md",
     "AWS/CLI.md",
     "Misc/_index.md",
     "Golang/Update Golang Version.md",
     "Golang/Profile Golang Applications.md",
-    "CLI/disk.md",
-    "CLI/docker.md",
-    "CLI/k8s.md",
-    "CLI/ps.md",
-    "Linux/rsync.md"
+    "CLI/disk.md"
   ]
 }
