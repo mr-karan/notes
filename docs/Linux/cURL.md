@@ -17,7 +17,7 @@ $ curl -I  -vvvv https://mrkaran.dev 2>&1 | grep -C 3 'HEAD'
 
 However it's easy to override the HTTP method using `-X`. For eg, to send a `GET` request but only display the headers:
 
-```
+```bash
 curl -I -X GET -vvvv https://mrkaran.dev
 ```
 
@@ -31,7 +31,7 @@ curl -i -XPOST -H "Content-Type: application/json" -d @mock_payload.json http://
 
 Using the `--fail` flag, `curl` can detect if the response code is an error (includes 4xx,5xx with an exception for 401 and 407 as they are authentication related). This is handy to use in scripts. Read [this](https://superuser.com/a/657174) for more.
 
-```
+```bash
 ❯ curl -i --fail https://httpbin.org/status/200
 HTTP/2 200 
 date: Tue, 02 Nov 2021 10:43:38 GMT
@@ -46,4 +46,18 @@ curl: (22) The requested URL returned error: 502
 
 ❯ curl -i --fail https://httpbin.org/status/400
 curl: (22) The requested URL returned error: 400 
+```
+
+## Show stats of the request
+
+```bash
+curl -kso /dev/null https://mrkaran.dev -w "==============\n\n 
+| dnslookup: %{time_namelookup}\n 
+| connect: %{time_connect}\n 
+| appconnect: %{time_appconnect}\n 
+| pretransfer: %{time_pretransfer}\n 
+| starttransfer: %{time_starttransfer}\n 
+| total: %{time_total}\n 
+| size: %{size_download}\n 
+| HTTPCode=%{http_code}\n\n"
 ```
