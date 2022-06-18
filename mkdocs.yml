@@ -71,3 +71,6 @@ markdown_extensions:
   - pymdownx.tasklist
   - toc:
       permalink: true
+
+extra_css:
+  - stylesheets/extra.css
