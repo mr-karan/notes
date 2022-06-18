@@ -36,9 +36,9 @@ print(res.strftime("%H:%M:%S"))
 
 ## Usage
 
-`python utc-ist.py --timestamp 03:00`
-`python utc-ist.py --timestamp 03:00:10`
-`python utc-ist.py --timestamp 03:00:15.100`
+- `python utc-ist.py --timestamp 03:00`
+- `python utc-ist.py --timestamp 03:00:10`
+- `python utc-ist.py --timestamp 03:00:15.100`
 
 It takes a `--timestamp` parameter which should be a string depicting the UTC time format.
 
