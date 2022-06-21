@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Misc/UTC to Local Time.md",
+            "file": "Shell/Line count for each file.md",
             "mode": "preview",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "utc",
+                "query": "safe tem",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Misc/UTC to Local Time.md",
+                "file": "Shell/Line count for each file.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,15 +89,15 @@
   },
   "active": "0bc92bfb63873397",
   "lastOpenFiles": [
-    "Misc/UTC to Local Time.md",
+    "Shell/Line count for each file.md",
+    "Shell/Safe Template.md",
+    "Docker/CLI.md",
+    "Python/UTC to Local Time.md",
     "Linux/cURL.md",
     "Nomad/CLI.md",
     "Nomad/Editor setup.md",
     "Nomad/Single Node Setup.md",
     "Docker/Custom subnet.md",
-    "Misc/Most used shell commands.md",
-    "AWS/CLI.md",
-    "Misc/_index.md",
-    "Golang/Update Golang Version.md"
+    "Shell/Most used shell commands.md"
   ]
 }

@@ -13,6 +13,6 @@ TOKEN=$(curl "https://auth.docker.io/token?service=registry.docker.io&scope=repo
 ## Docker Disk Usage
 
 ```
-docker system df
+docker system df --verbose
 ```
 
