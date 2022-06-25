@@ -7,12 +7,8 @@
         "id": "0bc92bfb63873397",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Shell/Line count for each file.md",
-            "mode": "preview",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -40,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "safe tem",
+                "query": "rsync",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Shell/Line count for each file.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +84,15 @@
   },
   "active": "0bc92bfb63873397",
   "lastOpenFiles": [
+    "AWS/Untitled.md",
+    "AWS/EC2 Pricing.md",
+    "Linux/rsync.md",
     "Shell/Line count for each file.md",
     "Shell/Safe Template.md",
     "Docker/CLI.md",
     "Python/UTC to Local Time.md",
     "Linux/cURL.md",
     "Nomad/CLI.md",
-    "Nomad/Editor setup.md",
-    "Nomad/Single Node Setup.md",
-    "Docker/Custom subnet.md",
-    "Shell/Most used shell commands.md"
+    "Nomad/Editor setup.md"
   ]
 }
