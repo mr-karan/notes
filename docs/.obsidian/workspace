@@ -7,8 +7,12 @@
         "id": "0bc92bfb63873397",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "AWS/View the volume ID in Instance.md",
+            "mode": "preview",
+            "source": false
+          }
         }
       }
     ],
@@ -36,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rsync",
+                "query": "ls",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "AWS/View the volume ID in Instance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,15 +89,15 @@
   },
   "active": "0bc92bfb63873397",
   "lastOpenFiles": [
-    "AWS/Untitled.md",
+    "AWS/View the volume ID in Instance.md",
+    "AWS/CLI.md",
+    "Linux/cURL.md",
     "AWS/EC2 Pricing.md",
     "Linux/rsync.md",
     "Shell/Line count for each file.md",
     "Shell/Safe Template.md",
     "Docker/CLI.md",
     "Python/UTC to Local Time.md",
-    "Linux/cURL.md",
-    "Nomad/CLI.md",
-    "Nomad/Editor setup.md"
+    "Nomad/CLI.md"
   ]
 }
