@@ -4,10 +4,11 @@
 SELECT
     concat(database, '.', table) AS table,
     formatReadableSize(sum(bytes)) AS size,
-    sum(bytes) AS bytes_size,
     sum(rows) AS rows,
     max(modification_time) AS latest_modification,
-    any(engine) AS engine
+    sum(bytes) AS bytes_size,
+    any(engine) AS engine,
+    formatReadableSize(sum(primary_key_bytes_in_memory)) AS primary_keys_size
 FROM system.parts
 WHERE active
 GROUP BY
@@ -29,4 +30,14 @@ SHOW ACCESS
 SHOW TABLES
 SHOW CREATE TABLE
 SHOW DATABASES
+```
+
+## Show Mutations
+
+### Pending
+
+```sql
+SELECT *
+FROM system.mutations
+WHERE is_done = 0
 ```
