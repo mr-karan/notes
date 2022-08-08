@@ -1,4 +1,4 @@
-I need to build some binaries _inside_ `Dockerfile` and after the `build` is done, wanted to copy the artifacts on the host.
+I needed to build some binaries _inside_ `Dockerfile` and copy the artifacts built inside the image to the host machine. 
 
 After some digging in, found `buildx` supports [Custom Build Outputs](https://docs.docker.com/engine/reference/commandline/build/#custom-build-outputs) 
 
