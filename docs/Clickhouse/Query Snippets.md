@@ -41,3 +41,18 @@ SELECT *
 FROM system.mutations
 WHERE is_done = 0
 ```
+
+## Cardinality
+
+```sql
+SELECT
+    formatReadableQuantity(uniq(URL)) AS cardinality_URL,
+    formatReadableQuantity(uniq(UserID)) AS cardinality_UserID
+FROM
+(
+    SELECT
+        user_id AS UserID,
+        http_uri AS URL
+    FROM logs.http
+)
+```

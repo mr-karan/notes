@@ -1,14 +1,38 @@
-Ref: https://betterdev.blog/minimal-safe-bash-script-template/
+## Preferred Version
 
-## Shorter Version
+I use the following template to quickstart any new shell script.
 
 ```bash
 #!/usr/bin/env bash
 
 set -Eeuo pipefail
+readonly SCRIPT_DIR="$(cd "$(dirname "$${BASH_SOURCE[0]}")" && pwd)"
+readonly SCRIPT_NAME="$(basename "$0")"
+
+function log {
+  local readonly level="$1"
+  local readonly message="$2"
+  local readonly timestamp=$(date +"%Y-%m-%d %H:%M:%S")
+  >&2 echo -e "$${timestamp} [$${level}] [$${SCRIPT_NAME}] $${message}"
+}
+function log_info {
+  local readonly message="$1"
+  log "INFO" "$${message}"
+}
+function log_warn {
+  local readonly message="$1"
+  log "WARN" "$${message}"
+}
+function log_error {
+  local readonly message="$1"
+  log "ERROR" "$${message}"
+}
 ```
 
 ## Elaborate Version
+
+Ref: https://betterdev.blog/minimal-safe-bash-script-template/
+
 ```bash
 #!/usr/bin/env bash
 
