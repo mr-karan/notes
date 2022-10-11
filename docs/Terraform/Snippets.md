@@ -12,3 +12,9 @@ Sometimes, the error message isn't clear by Terraform Provider.  In that case, t
 ```bash
 grep 'HTTP/1.1 403' -C 5 log.log
 ```
+
+## Delete all resources in a state
+
+```bash
+terraform state list | cut -f 1 -d '[' | xargs -L 1 terraform state rm
+```
